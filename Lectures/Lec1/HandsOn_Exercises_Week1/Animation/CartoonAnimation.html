@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple Animation</title>
+</head>
+<body >
+	<h1>Tom and Jerry</h1>
+	<img id="cartoon" src="Images/TJ.jpg" height="60" width="97" alt="Image of a cartoon character." />
+
+	<script>
+		var i=0;
+		var cartoon = document.getElementById("cartoon");
+
+		function changePic(){
+			if(i>6)
+			i=0
+			else{
+				cartoon.src = "Images/TJ"+i+".jpg"
+				i++;
+			}
+
+		}
+		setInterval(changePic,1000)
+		
+		
+		
+	</script>
+	</body>
+</html>

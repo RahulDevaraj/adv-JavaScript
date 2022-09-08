@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Working with Forms</title>
+
+	<style>
+		body {
+			background-color: cyan;
+		}
+	</style>
+</head>
+
+<body id="body">
+	<h1>Working with Form Elements</h1>
+	<form>
+		<p>Which of the following tourist spots would you like to visit?</p>
+		<input type="radio" name="touristSpot" value="Niagara Falls">Niagara Falls <br>
+		<input type="radio" name="touristSpot" value="Banff National Park">Banff National Park <br>
+		<input type="radio" name="touristSpot" value="Whistler">Whistler<br>
+		<input type="radio" name="touristSpot" value="Parliament Hill" >Parliament Hill <br>
+
+	</form>
+	<br>
+	<button id="btn" onclick = "chooseSpot();">Choose Spot</button>
+
+	<p>Your Prefered Place to Visit: <span id="place"></span></p>
+
+
+	<script>
+		function chooseSpot() {
+			let val = document.getElementsByName("touristSpot")
+
+			for(let i=0;i <val.length; i++)
+			{
+				if(val[i].checked)
+				document.getElementById("place").innerHTML = val[i].value
+			}
+			
+		}
+
+	</script>
+
+
+</body>
+
+</html>

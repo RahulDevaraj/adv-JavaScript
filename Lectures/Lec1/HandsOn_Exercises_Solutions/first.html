@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Convert from Fahrenheit to Celsius</title>
+</head>
+
+<body>
+	<h2> This script converts Fahrenheit temp to Celsius and prints the result to the screen </h2>
+	<label for="temp">Enter the temperature in Fahrenheit: </label>
+	<input id="temp" name="temp" type="text">
+	<button onclick="fahrenheitToCelsius()">Temp</button>
+	<p id="demo"></p>
+
+	<script>
+
+		function fahrenheitToCelsius() {
+			let f = document.getElementById("temp").value;
+			console.log(f);
+			
+			let c = (f-32)*5/9;
+			
+			console.log(c);
+
+			document.getElementById("demo").innerHTML = `The Fahrenheit temp ${f} in degree Celcius is ${c.toFixed(2)}`;
+			
+			console.log(c);
+			
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Use of Arrays</title>
+	<style>
+		body {
+
+			background-color: cyan;
+		}
+
+		p {
+			font-style: italic;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Best Sports Slogans</h1>
+
+	<hr>
+	<h4>Random slogans go here</h4>
+	<p id="theSlogans"></p>
+
+	<hr>
+
+	<button onclick="displaySlogans();">Display Three Random Slogans</button>
+	<hr>
+	<hr>
+	<h4>All slogans go here</h4>
+	<p id="allSlogans"></p>
+	<hr>
+	<button onclick="displayAllSlogans();">Display All Slogans</button>
+
+	<h4>Do you want to add your slogan to the list? Please type it in the textbox below:</h4>
+
+	<form>
+		<input type="text" name="slogan" id="mySlogan" size="100"> <br><br>
+		<input type="reset" name="reset" id="btn1" value="Reset" onclick="resetValues();" > &nbsp; &nbsp;
+		<input type="button" name="display" id="btn2" value="Update Slogans" onclick="updateSlogans();" > <br>
+	</form>
+
+	<script>
+
+		let slogans = ["Teamwork Makes The Dream Work.",
+			"Intensity is not a perfume!",
+			"There’s no traffic on the extra mile.",
+			"The will to win is not nearly so important as the will to prepare to win.",
+			"Be prepared! “If only” are the famous last words of those who weren’t.",
+			"Actions speak louder than coaches.",
+			"Great opportunities come to those who make the most of small ones.",
+			"To demand more of yourself than you do of others is the first step on any ladder of success.",
+			"Luck is what happens when preparation meets opportunity."];
+
+			function displayAllSlogans(){
+				let allSlogans = ""
+				for(let i=0;i<slogans.length;i++)
+				allSlogans += slogans[i]+"<br>";
+
+				document.getElementById("allSlogans").innerHTML = allSlogans;
+
+			}
+
+			function displaySlogans(){
+				let randomNumbers = []
+				let randomSlogans = ""
+				let count = 0;
+
+				while(true){
+					let rand = Math.floor(Math.random()*slogans.length);
+
+					if(randomNumbers.indexOf(rand) == -1)
+					{
+						randomSlogans += slogans[rand]+"<br>";
+						count++;
+					}
+					
+					
+					if(count == 3)
+					{
+						document.getElementById("theSlogans").innerHTML = randomSlogans
+						break;
+					}
+					
+
+				}
+
+				
+
+			}
+
+			function updateSlogans(){
+				let slogan = document.getElementById("mySlogan").value;
+
+				if(slogans.indexOf(slogan) == -1)
+				slogans.push(slogan)
+
+				else
+				alert("Already Exist")
+			}
+
+	</script>
+
+</body>
+
+</html>

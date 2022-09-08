@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>News Items</title>
+	
+
+</head>
+
+<body>
+	<select name="headline" multiple="multiple" style="height: 93px">
+
+		<option>Investigation of building standards in quake zone</option>
+		<option>The looming battle over the Colorado River</option>
+		<option>Apple App Downloads Approach 1 Billion</option>
+		<option>Moderna Covid-19 booster may come later than Pfizer</option>
+		<option>America's uninsured haven't shown collective power</option>
+
+	</select>
+
+	<textarea id="news" cols="50" rows="10" style="background-color: Transparent"></textarea>
+
+	<script>
+		let newsItems = ["L'AQUILA, ITALY (AP) - L'Aquila's chief prosecutor announced an investigation into allegations of shoddy construction as workers continued to scour the rubble for people still missing after a devastating earthquake five days ago.",
+						"Maricopa, ArizonaFor farmers in the deserts of central Arizona, success and failure is defined by who has water and who does not. At the moment, Dan Thelander is still among the haves. ",
+						"(eWeek.com) - Apple is close to hitting 1 billion downloads from its App Store and plans on a prize giveaway for whoever downloads the billionth application that includes a MacBook Pro and an iPod Touch.",
+						"Booster doses of Moderna's Covid-19 vaccine may be delayed from rolling out the week of September 20 as planned, Dr. Anthony Fauci said Sunday.",
+						"ATLANTA (AP) - The Washington Nationals would like a restart. The Atlanta Braves just want to keep the winning pace they have set during the first week of the season."]
+		
+		let news = document.getElementsByName("headline")[0]
+
+		news.addEventListener("change",()=>{
+			let index = news.selectedIndex;
+			console.log(index)
+			document.getElementById("news").value = newsItems[index];
+			
+		})
+
+	</script>
+</body>
+
+</html>

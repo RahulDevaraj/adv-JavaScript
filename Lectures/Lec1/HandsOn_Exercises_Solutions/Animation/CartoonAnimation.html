@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple Animation</title>
+</head>
+<body >
+	<h1>Tom and Jerry</h1>
+	<img id="cartoon" src="Images/TJ0.jpg" height="60" width="97" alt="Image of a cartoon character." />
+
+	<script>
+		
+		let images = ["Images/TJ0.jpg","Images/TJ1.jpg", "Images/TJ2.jpg", "Images/TJ3.jpg", "Images/TJ4.jpg", "Images/TJ5.jpg", "Images/TJ6.jpg"]
+		let currImage =  0;
+
+
+		function animateImage(){
+			document.getElementById("cartoon").src=images[currImage];
+			if(currImage == 6)
+			currImage =0;
+			else
+			currImage++;
+		}
+
+		setInterval(animateImage, 200);
+		
+		
+	</script>
+	</body>
+</html>
