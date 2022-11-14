@@ -1,0 +1,8 @@
+npm init
+npm i body-parser nodemon express
+
+inside package.json
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  }
