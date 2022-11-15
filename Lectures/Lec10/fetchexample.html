@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Fetch API</title>
+  </head>
+  <body>
+    <h2>Using Fecth API</h2>
+    <script>
+      const city = "Vancouver";
+      const apiKey = "1a88134aca055f658f324283d37732a1";
+      const units = "metric";
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+      /* 
+      fetch(url)
+      .then(res=>{
+        console.log("RESOLVED: ", res)
+        return res.json()
+      })
+      .then(data=>{
+        console.log("DATA RESOLVED: ", data)
+      })
+      .catch(err=>{
+        console.log("ERROR: ", err)
+      }) */
+
+      //ASYNC and AWAIT
+      const weatherAPP = async () => {
+        try {
+          const res = await fetch(url);
+          const data = await res.json();
+          console.log("RESOVED: ", data);
+        } catch (err) {
+          console.log("ERROR: ", err);
+        }
+      };
+
+      weatherAPP()
+    </script>
+  </body>
+</html>

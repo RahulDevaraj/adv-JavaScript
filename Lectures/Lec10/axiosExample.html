@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Using AXIOS</title>
+  </head>
+  <body>
+    <h2>Using AXIOS</h2>
+    <script>
+      const city = "Vancouver";
+      const apiKey = "1a88134aca055f658f324283d37732a1";
+      const units = "metric";
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+
+      //using .then
+      /* axios
+        .get(url)
+        .then((res) => {
+          console.log("RESOLVED: ", res.data);
+        })
+        .catch((err) => {
+          console.log("ERROR: ", err);
+        }); */
+
+      //using async and await
+
+      const weatherApp = async () => {
+        try {
+          const res = await axios.get(url);
+          const data = res.data;
+          console.log("RESOLVED: ", res.data);
+        } catch (err) {
+          console.log("ERROR: ", err);
+        }
+      };
+      weatherApp();
+    </script>
+  </body>
+</html>
