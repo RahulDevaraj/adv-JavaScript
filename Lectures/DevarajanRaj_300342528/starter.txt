@@ -1,0 +1,13 @@
+Question 1:
+https://min-api.cryptocompare.com/data/v2/pair/mapping/exchange?e=Bitso&api_key=15043f7afb5100526069aecf17ded5029e0490d7a43af1618a31871579642f2a
+
+https://min-api.cryptocompare.com/data/price?fsym=${fsym}&tsyms=${tsym}&api_key=15043f7afb5100526069aecf17ded5029e0490d7a43af1618a31871579642f2a
+
+Question 2:
+
+After hours of watching films and trawling through content online, we present to you all the People, Films, Species, Starships, Vehicles and Planets from Star Wars.
+
+Options - people, planets, films, species, vehicles, starships
+
+
+This resource contains too many details. Sorry, we can’t process the data.
