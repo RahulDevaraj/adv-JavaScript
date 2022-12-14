@@ -1,0 +1,58 @@
+[
+    {
+        "id": "0175d1f0-a8c6-41bf-8d02-df5734d829a4",
+        "name": "Adams",
+        "title": "Manager",
+        "city": "Atlanta",
+        "active": false,
+        "img": "https://cdn.pixabay.com/photo/2014/01/18/10/14/vaulted-cellar-247391_960_720.jpg"
+    },
+    {
+        "id": "83c7ba2f-7392-4d7d-9e23-35adbe186046",
+        "name": "Bacarella",
+        "title": "Account Rep",
+        "city": "Boston",
+        "active": true,
+        "img": "https://cdn.pixabay.com/photo/2016/07/03/17/48/lost-places-1495150_960_720.jpg"
+    },
+    {
+        "id": "a11e3995-b0bd-4d58-8c48-5e49ae7f7f23",
+        "name": "Chen",
+        "title": "Manager",
+        "city": "Boston",
+        "active": true,
+        "img": "https://cdn.pixabay.com/photo/2017/12/23/19/53/lost-places-3035877_960_720.jpg"
+    },
+    {
+        "id": "b22e3995-a0bd-4d58-8c48-5e49ae7e7f25",
+        "name": "Laing",
+        "title": "Manager",
+        "city": "Atlanta",
+        "active": true,
+        "img": "https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg"
+    },
+    {
+        "id": "af3g3995-a0bd-4d58-8c48-5e49ae7e7f25",
+        "name": "Forgan",
+        "title": "Account Rep",
+        "city": "Boston",
+        "active": false,
+        "img": "https://cdn.pixabay.com/photo/2016/02/10/00/07/bench-1190768_960_720.jpg"
+    },
+    {
+        "id": "nhj8-3995-a0bd-4d58-8c48-5e49ae7e7f25",
+        "name": "Scholfield",
+        "title": "Manager",
+        "city": "Boston",
+        "active": true,
+        "img": "https://cdn.pixabay.com/photo/2022/10/24/17/50/mountains-7544027_960_720.jpg"
+    },
+    {
+        "id": "abcde-3995-a0bd-4d58-8c48-5e49ae7e7f25",
+        "name": "Gomez",
+        "title": "Account Rep",
+        "city": "Atlanta",
+        "active": true,
+        "img": "https://cdn.pixabay.com/photo/2022/10/24/17/50/mountains-7544027_960_720.jpg"
+    }
+]
