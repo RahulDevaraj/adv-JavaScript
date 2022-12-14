@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!---- STUDENT INFORMATION
+	CSIS 3380 Quiz 1
+	Student Name: Rahul Devarajan Raj
+	Student ID: 300342528
+	 -->
+	<title>QUIZ 1</title>
+
+	<style>
+		* {
+			padding: 5px;
+			margin: 1px;
+		}
+
+		body {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 87.5%;
+			margin: 0 auto;
+			padding: 15px 25px;
+			background-color: #ccc896;
+		}
+
+		#question4 {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+			background-image: url(images/flowers.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-weight: bolder;
+		}
+	</style>
+	<script src="solution.js" defer></script>
+	
+</head>
+
+<body>
+	<main>
+
+		<!-- ============= START OF QUESTION 4 ============ --->
+
+		<div id="question4">
+			<h1> Urban Stems</h1>
+
+			<fieldset id="deliveryinfo">
+				<legend>Delivery Information</legend>
+
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="fname" value="" /><br>
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lname" value="" />
+
+			</fieldset>
+
+			<fieldset id="orderinfo">
+				<legend>Order</legend>
+
+				<fieldset id="occasions" name="occasions">
+					<legend>Choose the Occasion</legend>
+					<input type="radio" name="occasion" id="birthday" value="Birthday" />
+					<label for="birthday">Birthday</label>
+					<input type="radio" name="occasion" id="congrats" value="Congratulations" />
+					<label for="congrats">Congratulations</label>
+					<input type="radio" name="occasion" id="thanks" value="Thank You!!" />
+					<label for="thanks">Thank You</label>
+					<input type="radio" name="occasion" id="anniversary" value="Special Date" />
+					<label for="anniversary">Special Date</label>
+				</fieldset>
+
+				<fieldset id="extratouch">
+					<legend>Add an "Extra Touch"</legend>
+					<input type="checkbox" id="vase" name="extratouches" value="Glass Vase" />
+					<label for="vase">Glass Vase</label>
+					<input type="checkbox" id="card" name="extratouches" value="Greeting Card" />
+					<label for="card">Greeting Card</label>
+					<input type="checkbox" id="chocolates" name="extratouches" value="Assorted Chocolates" />
+					<label for="chocolates">Assorted Chocolates</label>
+					<input type="checkbox" id="teddy" name="extratouches" value="Teddy Bear" />
+					<label for="teddy">Teddy Bear</label>
+					<input type="checkbox" id="balloon" name="extratouches" value="Balloons" />
+					<label for="balloon">Balloons</label>
+				</fieldset>
+			</fieldset>
+
+			<fieldset id="submitbutton">
+				<legend>Order Details</legend>
+				<input type="button" id="placeorder" value="Place Order" />
+				<p id="order"> Show the order details here: </p>
+			</fieldset>
+		</div>
+
+	
+
+	</main>
+</body>
+
+</html>
